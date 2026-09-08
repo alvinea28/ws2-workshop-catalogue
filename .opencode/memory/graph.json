@@ -3,9 +3,35 @@
   "generatedAt": "2026-09-08T00:00:00Z",
   "root": ".",
   "nodes": [
-    { "id": "README.md", "kind": "guide", "summary": "Public numbered catalogue, explicit first-time entry and independent laboratory boundaries." },
-    { "id": "LICENSE", "kind": "license", "summary": "Original workshop catalogue text license." }
+    {
+      "id": "README.md",
+      "kind": "guide",
+      "summary": "Public numbered catalogue, explicit first-time entry and independent laboratory boundaries."
+    },
+    {
+      "id": "LICENSE",
+      "kind": "license",
+      "summary": "Original workshop catalogue text license."
+    },
+    {
+      "id": "docs/daily work report/2026-09-08.md",
+      "kind": "report",
+      "summary": "Separate daily source/simulation verification, document URLs and genuine remaining prerequisites."
+    }
   ],
-  "edges": [{ "from": "README.md", "to": "LICENSE", "rel": "licensed-by" }],
-  "hotspots": ["README.md"]
+  "edges": [
+    {
+      "from": "README.md",
+      "to": "LICENSE",
+      "rel": "licensed-by"
+    },
+    {
+      "from": "README.md",
+      "to": "docs/daily work report/2026-09-08.md",
+      "rel": "maintenance-report"
+    }
+  ],
+  "hotspots": [
+    "README.md"
+  ]
 }
