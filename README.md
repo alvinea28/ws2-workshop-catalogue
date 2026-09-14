@@ -10,6 +10,14 @@ starting files, references and tests. **No earlier lab repository is required.**
 > learning sequence, not mandatory dependencies. You may enter another lab
 > directly; its own **Start here** guide repeats all required setup.
 
+## Review all content and the guided Exercise experience
+
+**[Full workshop content, simulation results and screenshots](full-ws-content/README.md)**
+links every lab's complete activity Markdown and its read-only public Exercise
+preview. Learners still begin in **their private copy's Exercise issue**;
+AgentAlvine uses Actions underneath to validate real activity and update that
+same issue. The catalogue is a directory, not a ninth course issue.
+
 ## Choose a laboratory
 
 | Order | Public source repository | Focus | External prerequisite |
