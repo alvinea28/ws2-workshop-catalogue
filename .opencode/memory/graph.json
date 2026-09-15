@@ -6,12 +6,14 @@
     {
       "id": "full-ws-content/README.md",
       "kind": "guide",
-      "summary": "Eight full-content review packs, attendee-owned Azure guide index, source Exercise previews and honest private simulation evidence entry points."
+      "date": "2026-09-15",
+      "summary": "Eight review packs cover 33 lessons total, preserve original A/B results and non-grading previews, and separate actual companion CI contracts from live Azure proof."
     },
     {
       "id": "README.md",
       "kind": "guide",
-      "summary": "Public numbered catalogue, explicit first-time entry and independent laboratory boundaries."
+      "date": "2026-09-15",
+      "summary": "Concise eight-lab entry links private-copy setup, Terraform AVM hands-on and own Azure values while distinguishing educational self-merge from protected live approval."
     },
     {
       "id": "LICENSE",
@@ -33,7 +35,13 @@
       "id": "docs/daily work report/2026-09-15.md",
       "kind": "report",
       "date": "2026-09-15",
-      "summary": "Catalogue daily report indexes eight attendee-owned Azure guides and source reports, recorded verification and human live boundaries without claiming catalogue CI or publication."
+      "summary": "Same-day setup history plus concise hands-on follow-up indexes eight appended reports, 339 recorded Node passes, nine contracts and fixed pre-report metrics; commit-bound publication tracked separately."
+    },
+    {
+      "id": "docs/devsecops-flow.md",
+      "kind": "guide",
+      "date": "2026-09-15",
+      "summary": "Terraform AVM DevSecOps map links all non-Sentinel hands-on components, four validated profiles and nine mock contracts with owner-gated live work, separate ownership and full cleanup."
     }
   ],
   "edges": [
@@ -62,6 +70,30 @@
       "from": "README.md",
       "to": "docs/daily work report/2026-09-15.md",
       "rel": "maintenance-report",
+      "date": "2026-09-15"
+    },
+    {
+      "from": "README.md",
+      "to": "docs/devsecops-flow.md",
+      "rel": "explains-devsecops-flow",
+      "date": "2026-09-15"
+    },
+    {
+      "from": "full-ws-content/README.md",
+      "to": "docs/devsecops-flow.md",
+      "rel": "links-service-companions",
+      "date": "2026-09-15"
+    },
+    {
+      "from": "docs/daily work report/2026-09-15.md",
+      "to": "docs/devsecops-flow.md",
+      "rel": "records-hands-on-index",
+      "date": "2026-09-15"
+    },
+    {
+      "from": "docs/daily work report/2026-09-15.md",
+      "to": "full-ws-content/README.md",
+      "rel": "records-review-scope",
       "date": "2026-09-15"
     }
   ],
