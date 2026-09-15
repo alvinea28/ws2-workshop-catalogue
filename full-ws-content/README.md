@@ -19,6 +19,13 @@ This catalogue links those independent packs; it is not another learner course.
 
 ## The learner starts in an issue, not in the Actions tab
 
+**New attendee setup:** every lab's review pack includes an Azure setup page with
+complete instructions for entering your own tenant, subscription and existing
+resource group, signing in when needed and verifying access. Open the
+[Azure setup guide index](../README.md#fill-your-own-azure-values-and-sign-in).
+No author's actual Azure values are supplied. Setup is not provisioning, and
+full reviewed workload cleanup remains required for any authorized live exercise.
+
 1. Choose a lab and make your own private copy from its public template.
 2. Open **your copy's Exercise issue**, using the link AgentAlvine places in its README.
 3. Read the current task in that issue body. Complete the real edits, commits,

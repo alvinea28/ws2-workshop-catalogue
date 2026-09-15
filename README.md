@@ -31,6 +31,32 @@ same issue. The catalogue is a directory, not a ninth course issue.
 | 07 | [ws2-azure-delivery-laboratory-07](https://github.com/alvinea28/ws2-azure-delivery-laboratory-07) | Identity/state study and controlled delivery | Offline module/snapshot supplied; live steps require private instructor-approved copy and real sandbox/gates |
 | 08 | [ws2-operations-capstone-laboratory-08](https://github.com/alvinea28/ws2-operations-capstone-laboratory-08) | Sanitized diagnosis, safe recovery, compatible app subnet | Complete module supplied; optional later live follow-up is separately approved |
 
+## Fill your own Azure values and sign in
+
+Each lab includes a complete **Azure setup** guide. Use your own tenant ID,
+subscription ID and instructor-assigned existing resource group—not the author's
+values. The guide covers finding values in the portal, Azure CLI installation,
+reusing an existing login, browser/MFA or device-code sign-in when needed, and a
+read-only check of the exact selected resource group. Values stay in your terminal
+session and are not committed to the repository.
+
+| Lab | Complete attendee Azure instructions |
+| --- | --- |
+| 01 | [Tenant, subscription, RG and login](https://github.com/alvinea28/ws2-github-copilot-laboratory-01/blob/dev/docs/azure-setup.md) |
+| 02 | [Tenant, subscription, RG and login](https://github.com/alvinea28/ws2-network-module-laboratory-02/blob/dev/docs/azure-setup.md) |
+| 03 | [Tenant, subscription, RG and login](https://github.com/alvinea28/ws2-subnet-security-laboratory-03/blob/dev/docs/azure-setup.md) |
+| 04 | [Tenant, subscription, RG and login](https://github.com/alvinea28/ws2-terraform-tests-docs-laboratory-04/blob/dev/docs/azure-setup.md) |
+| 05 | [Tenant, subscription, RG and login](https://github.com/alvinea28/ws2-module-release-consumer-laboratory-05/blob/dev/docs/azure-setup.md) |
+| 06 | [Tenant, subscription, RG and login](https://github.com/alvinea28/ws2-github-actions-ci-laboratory-06/blob/dev/docs/azure-setup.md) |
+| 07 | [Tenant, subscription, RG and login](https://github.com/alvinea28/ws2-azure-delivery-laboratory-07/blob/dev/docs/azure-setup.md) |
+| 08 | [Tenant, subscription, RG and login](https://github.com/alvinea28/ws2-operations-capstone-laboratory-08/blob/dev/docs/azure-setup.md) |
+
+Setup does not provision resources or grant permissions. PR jobs must remain
+credential-free. Every approved live exercise must finish with full destruction
+of its own managed workload and verified cleanup; preserve existing/shared
+resource groups, backends and identities. Do not confuse sign-in, provider-mocked
+validation or an Exercise checkbox with a verified Azure deployment.
+
 ## Exactly how to begin
 
 1. Open the selected public repository above and read its **Start here** section.

@@ -1,12 +1,12 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-14T00:00:00Z",
+  "generatedAt": "2026-09-15T00:00:00Z",
   "root": ".",
   "nodes": [
     {
       "id": "full-ws-content/README.md",
       "kind": "guide",
-      "summary": "Eight full-content review packs, source Exercise previews and honest private simulation evidence entry points."
+      "summary": "Eight full-content review packs, attendee-owned Azure guide index, source Exercise previews and honest private simulation evidence entry points."
     },
     {
       "id": "README.md",
@@ -27,7 +27,13 @@
       "id": "docs/daily work report/2026-09-14.md",
       "kind": "report",
       "date": "2026-09-14",
-      "summary": "Separate catalogue daily report indexes all eight source reports and complete review packs with verified local results and dev publication pending."
+      "summary": "Separate catalogue daily report indexes all eight source reports and complete review packs with verified local results and dev publication verified."
+    },
+    {
+      "id": "docs/daily work report/2026-09-15.md",
+      "kind": "report",
+      "date": "2026-09-15",
+      "summary": "Catalogue daily report indexes eight attendee-owned Azure guides and source reports, recorded verification and human live boundaries without claiming catalogue CI or publication."
     }
   ],
   "edges": [
@@ -51,6 +57,12 @@
       "to": "docs/daily work report/2026-09-14.md",
       "rel": "maintenance-report",
       "date": "2026-09-14"
+    },
+    {
+      "from": "README.md",
+      "to": "docs/daily work report/2026-09-15.md",
+      "rel": "maintenance-report",
+      "date": "2026-09-15"
     }
   ],
   "hotspots": [
