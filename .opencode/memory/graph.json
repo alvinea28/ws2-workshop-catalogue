@@ -1,8 +1,58 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-15T00:00:00Z",
+  "generatedAt": "2026-09-18T00:00:00Z",
   "root": ".",
   "nodes": [
+    {
+      "id": "setup.ps1",
+      "kind": "module",
+      "summary": "Windows x64 WinGet setup checks eight tools and six extensions, recognizes active bundled Copilot without duplication and preserves exact pins, missing-only changes and local-only modes."
+    },
+    {
+      "id": "docs/windows-setup.md",
+      "kind": "guide",
+      "summary": "Hash-verified pre-clone PowerShell entry explains installation, preview/check modes, tool inventory, profiles, recovery and remaining personal account gates."
+    },
+    {
+      "id": "tests/setup.tests.ps1",
+      "kind": "test",
+      "summary": "Fifty-three isolated PowerShell scenarios test installation/launcher control flow, active bundled extensions, safe profile names, real native exits and child mode binding without installing software."
+    },
+    {
+      "id": "tests/setup.test.mjs",
+      "kind": "test",
+      "summary": "Node runner checks all 58 scenarios/contracts, exact pins, safety rules and the published bootstrap digest against LF-normalized source."
+    },
+    {
+      "id": "tests/native-exit.cjs",
+      "kind": "test",
+      "summary": "Harmless real process emits stderr and selected exit status for native wrapper tests."
+    },
+    {
+      "id": "tests/mode-probe.ps1",
+      "kind": "test",
+      "summary": "Harmless real child PowerShell verifies named Plan/Check switch binding."
+    },
+    {
+      "id": "package.json",
+      "kind": "config",
+      "summary": "Dependency-free Node test entry for the Windows setup installer."
+    },
+    {
+      "id": ".gitattributes",
+      "kind": "config",
+      "summary": "Pins PowerShell Git blobs to LF so the distributed SHA-256 is stable on Windows."
+    },
+    {
+      "id": ".github/workflows/setup-checks.yml",
+      "kind": "workflow",
+      "summary": "Read-only credential-free Windows CI runs setup regressions on pinned Node without package installs or Azure/OIDC/state access."
+    },
+    {
+      "id": "docs/daily work report/2026-09-18.md",
+      "kind": "report",
+      "summary": "Separate catalogue report indexes all nine reports, 58 installer plus 339 lab passes, document checks and honest clean-machine/account limitations."
+    },
     {
       "id": "full-ws-content/README.md",
       "kind": "guide",
@@ -12,8 +62,8 @@
     {
       "id": "README.md",
       "kind": "guide",
-      "date": "2026-09-15",
-      "summary": "Concise eight-lab entry links private-copy setup, Terraform AVM hands-on and own Azure values while distinguishing educational self-merge from protected live approval."
+      "date": "2026-09-18",
+      "summary": "Eight-lab catalogue starts with one pre-clone Windows setup command, then private-copy/account guidance, Terraform AVM hands-on and separate protected live approval."
     },
     {
       "id": "LICENSE",
@@ -45,6 +95,19 @@
     }
   ],
   "edges": [
+    { "from": "README.md", "to": "docs/windows-setup.md", "rel": "prepares-machine" },
+    { "from": "docs/windows-setup.md", "to": "setup.ps1", "rel": "hash-verifies-and-invokes" },
+    { "from": "package.json", "to": "tests/setup.test.mjs", "rel": "runs-tests" },
+    { "from": "tests/setup.test.mjs", "to": "tests/setup.tests.ps1", "rel": "runs-native-harness" },
+    { "from": "tests/setup.test.mjs", "to": "docs/windows-setup.md", "rel": "verifies-bootstrap-hash" },
+    { "from": "tests/setup.tests.ps1", "to": "setup.ps1", "rel": "tests-with-isolated-boundaries" },
+    { "from": "tests/setup.tests.ps1", "to": "docs/windows-setup.md", "rel": "tests-published-command" },
+    { "from": "tests/setup.tests.ps1", "to": "tests/native-exit.cjs", "rel": "checks-real-native-exit" },
+    { "from": "tests/setup.tests.ps1", "to": "tests/mode-probe.ps1", "rel": "checks-real-child-modes" },
+    { "from": ".gitattributes", "to": "setup.ps1", "rel": "stabilizes-distribution-bytes" },
+    { "from": ".github/workflows/setup-checks.yml", "to": "tests/setup.test.mjs", "rel": "checks-without-cloud-access" },
+    { "from": "README.md", "to": "docs/daily work report/2026-09-18.md", "rel": "maintenance-report" },
+    { "from": "docs/daily work report/2026-09-18.md", "to": "docs/windows-setup.md", "rel": "records-setup-delivery" },
     {
       "from": "README.md",
       "to": "full-ws-content/README.md",

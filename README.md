@@ -7,15 +7,30 @@ The catalogue is a directory, **not a ninth Exercise**. **No Bicep or Sentinel.*
 
 [All 33 lessons and historical results](full-ws-content/README.md) · [DevSecOps flow and prerequisites](docs/devsecops-flow.md)
 
+## Prepare your machine before the workshop
+
+**Windows x64: [run the one-command setup](docs/windows-setup.md#2-paste-this-one-command)
+before cloning anything.** It installs Git, desktop VS Code, Node **24.16.0**,
+Terraform **1.16.1**, terraform-docs **0.24.0**, actionlint **1.7.12**, GitHub CLI,
+Azure CLI and **six VS Code extensions**, including Copilot Chat and Terraform.
+Run once for all eight labs; compatible installed tools are reused. Preview and
+check-only modes are included. Restart VS Code after **READY**.
+
+No Git/Node/VS Code installation is needed to run the setup itself; it uses
+Windows PowerShell and WinGet. Your GitHub/Copilot sign-in, MFA/seat and permissions
+remain personal steps. Other platforms keep the manual **Setup** guides below.
+No cloud resources, identities, subscriptions, state or learner progress are changed.
+
 ## Start in your own private copy
 
 1. Open a source README below. Use **COPY EXERCISE** or **Use this template →
   Create a new repository**; choose your permitted owner and **Private**, retaining
   the laboratory-number suffix. Already copied? Reuse that copy.
-2. Use **Setup** below to install Git/desktop VS Code if needed. In **your copy**,
+2. Already ran the Windows setup? Skip manual installs. Otherwise use **Setup**
+  below to install the tools. In **your copy**,
   copy **Code → HTTPS**; use **Ctrl+Shift+P → Git: Clone** (macOS: **Cmd**), paste
   **your own URL**, choose a folder, then **Open** only that clone—not its parent.
-3. Follow **Setup** for accounts, local authorship, Copilot seat and pinned tools.
+3. Follow **Setup** for accounts, local authorship, Copilot seat and tool verification.
   Run its explained **read-only doctor** at the clone root; stop on errors and
   use that lab's linked recovery instructions. A doctor cannot certify a seat/login.
 4. Open **your copy's Exercise** and follow its current task. Save, inspect, commit
@@ -80,4 +95,5 @@ original root/state** and verified inventory. Retain the existing RG, backend,
 identities, runner and shared settings. Issue progress never authorizes Azure.
 
 Maintenance is **dev only**; **main publication is prohibited** by authoring policy.
-This documentation changes no permissions and publishes nothing. [MIT license](LICENSE).
+The optional workstation installer changes local software, never cloud permissions
+or repositories. [MIT license](LICENSE).
